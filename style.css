@@ -1,0 +1,155 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    left: 0px ;
+    
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(73, 199, 193);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    font-family: 'Baloo Bhai 2';
+    color: white;
+    display: block;
+    padding: 3px 40px ;
+    text-decoration: none;
+    border-radius: 15px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+
+/* Navigation Bar: Logo Image */
+#logo{
+    margin: 10px 34px;
+
+
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 6px;
+
+}
+
+#home::before{
+    content: "";
+    background: url("bg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.50;
+}
+
+#client{
+    display: block;
+    justify-content: center;
+    margin-top: 0px;
+    height: 200px;
+    text-align: center;
+}
+
+
+#add-project{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#view{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    
+    
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    color: white;
+    background-color: rgb(20, 161, 150);
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ .btn:hover{
+     color: black;
+     background-color: blue;
+
+ }
+ .center{
+     text-align: center;
+     
+ }
+.submit-button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    margin: 17px;
+    color: white;
+    background-color: rgb(125, 126, 134);
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+
+ 
